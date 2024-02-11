@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates xml:space="preserve">
+    <t t-name="PrintingScan">
+                <link rel="stylesheet" type="text/css" href="/work_order_scanning/static/src/style.css"/>
+        <div class="container-fluid bg-light-grey">
+            <div class="row pt-4">
+<!--                            <div class="col-md-4">-->
+                <!--                                -->
+                <!--                            </div>-->
+                <div class="col-md-3 input_class">
+                    <div class="row">
+                        <div class="col-md-8 pe-0">
+                            <input class="form-control bg-white" id="filter_search" type="text"
+                                   placeholder="Search Order.."/>
+                        </div>
+                        <div class="col-md-4 ps-0">
+                        <select class="form-select filter_button  bg-white" id="filter"
+                                aria-label="Default select example">
+                                     <option value="select_filter">Select filter</option>
+                            <option selected="" value="front">Front</option>
+                            <option value="back">Back</option>
+                            <option value="neck">Neck</option>
+                            <option value="shoulders">Shoulders</option>
+                        </select>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-md-5">
+
+                            </div>
+                <div class="col-md-4 text-end mt-2">
+                                    <h3 id="selected_printer">No Printer Allocated</h3>
+                            </div>
+                        </div>
+            <div class="row mt-3">
+<!--                            <div class="col-md-4 ps-5 ">-->
+                <!--                                <h4>Scan the label to start printing</h4>-->
+                <!--                            </div>-->
+                <div class="col-md-4">
+
+                            </div>
+                <div class="col-md-4 mt-2">
+
+                            </div>
+                        </div>
+            <div class="row custom_height">
+                <div class="col-md-3 text-center left_card " id="print_scan_geek"></div>
+                <div class="col-md-9 bg-white shadow border custom_width">
+
+                                <div class="  mb-5">
+                                    <div class="right_card" id="right_scan_value">
+                            <div class="row welcome-page-text text-center">
+                                <div class="col-md-12">
+                                    <h1 style="margin-top:20px"><strong>Scan the label to start printing</strong></h1>
+                                </div>
+                            </div>
+                                        <div class="row bin-image text-center">
+                                <div class="col-md-12">
+                                    <div class=" text-center">
+                                        <img class="default_image"
+                                             src="/work_order_scanning/static/src/img/barcode_scanner.png"
+                                             alt="Scanner"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                </div>
+                            </div>
+                </div>
+
+    </div>
+        <!--        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scan_again_work_order">-->
+        <!--      Launch demo modal-->
+        <!--    </button>-->
+
+        <!-- Modal -->
+        <div class="modal fade scan_modal" id="scan_again_work_order" tabindex="-1"
+             aria-labelledby="scan_again_work_order"
+             aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Work Order</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                <div class="modal-body modal_body_scan_again">
+
+              </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary" id="yes_rescan_button">Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </t>
+</templates>

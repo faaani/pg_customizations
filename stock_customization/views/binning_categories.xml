@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--        <record id="binning_category_form_view" model="ir.ui.view">-->
+        <!--            <field name="name">binning.category.form</field>-->
+        <!--            <field name="model">binning.category</field>-->
+        <!--            <field name="arch" type="xml">-->
+        <!--                <form string="Binning Categories">-->
+        <!--                    <sheet>-->
+        <!--                        <group>-->
+        <!--                            <field name="name"/>-->
+        <!--                        </group>-->
+        <!--                    </sheet>-->
+        <!--                </form>-->
+        <!--            </field>-->
+        <!--        </record>-->
+
+        <record id="binning_category_tree_view" model="ir.ui.view">
+            <field name="name">binning.category.tree</field>
+            <field name="model">binning.category</field>
+            <field name="arch" type="xml">
+                <tree string="Binning Category" editable="bottom">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="binning_category_action" model="ir.actions.act_window">
+            <field name="name">Binning Category</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">binning.category</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    There is no examples click here to add new binning category.
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="Binning Categories" id="binning_category_menu" parent="stock.menu_warehouse_config"
+                  action="binning_category_action"/>
+
+    </data>
+</odoo>

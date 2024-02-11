@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Create the client action -->
+    <record id="action_work_center_list" model="ir.actions.client">
+        <field name="name">Printers</field>
+        <field name="tag">work_order_scanning.work_center_list_view</field>
+        <field name="target">new</field>
+
+    </record>
+
+    <menuitem name="Configuration" sequence="2" id="printing_config_menu"
+              parent="work_order_scanning.work_order_scanning_menu"/>
+    <menuitem name="Printers" sequence="3" id="printing_menu"
+              parent="work_order_scanning.printing_config_menu" action="work_order_scanning.action_work_center_list"
+    />
+
+
+</odoo>

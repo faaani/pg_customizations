@@ -1,0 +1,76 @@
+.o_kanban_renderer.o_kanban_ungrouped .o_kanban_record.o_kanban_ghost {
+    display: none !important;
+}
+
+.custom_height {
+    height: 750px;
+}
+
+.left_card {
+    max-height: 920px;
+    overflow-y: scroll;
+}
+
+.bg-light-grey {
+    background-color: #ededed !important;
+}
+
+.right_card {
+    margin-bottom: 5rem;
+}
+
+.input_field {
+    width: 92%;
+}
+
+.btn-block {
+    width: 100% !important;
+}
+
+.mt-6 {
+    margin-top: 8rem !important;
+}
+
+.custom_width {
+    width: 74.333333% !important;
+}
+
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    padding: 0px !important;
+}
+
+.footer_custom {
+    display: none !important;
+}
+
+/*.footer_show{*/
+/*     display: block !important;*/
+/*}*/
+#filter {
+    border-left: none !important;
+}
+
+#filter_search {
+    border-right: none !important;
+}
+
+.filter_button {
+    padding: 0.375rem 2.25rem 0.375rem 2rem !important;
+    box-shadow: none !important;
+}
+
+#filter_search:focus {
+    border-color: #9DA1AA !important;
+}
+
+.filter_button:focus {
+    border-color: #9DA1AA !important;
+}
+.modal-dialog {
+    padding-top: 18rem !important;
+}
+.order_age,.btn-state{
+   width:80px;
+}
